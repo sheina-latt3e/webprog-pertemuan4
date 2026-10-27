@@ -27,13 +27,13 @@ body{
 
  .kartu-profile p{
    margin: 0;
-   color: #64748b;
+   color: #d10606;
    font-size: 20px;
  }
 
  .btn-detail{
    color : #fff;
-   background-color: #00b7ff;
+   background-color: #190be0;
    border: none;
    padding: 10px 18px;
    border-radius: 6px;
@@ -42,5 +42,5 @@ body{
  }
 
  .btn-detai:hover{
-      background-color: #0c6ae4;
+      background-color: #1556ac;
  }

@@ -18,6 +18,20 @@
             border: 2px solid #050405;
             border-radius: 6px;
         }
+        .btn-close{
+            position: relative;
+            top:8px;
+            right:10px;
+            border: none;
+            background: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #555;
+        }
+        .btn-close:hover{
+            color: #ff0000;
+        }
 
     </style>
 </head>
@@ -26,16 +40,31 @@
         <div class="kartu-profile">
             <h2>Tianyu</h2>
             <p>Web Desain</p>
-            <button onclick="info()" class="btn-detail">Info Lengkap</botton>
+            <button id="btndetail" onclick="info()" class="btn-detail">Info Lengkap</botton>
         </div>
     </div>
-    <div class ="kotak-info sembunyi">
+    <div class ="kotak-info sembunyi" id="infobox">
+        <button onclick="tutupdetail()" class="btn-detail">&times;</button>
         <h1>Informasi Detail</h1>
     </div>
 
 <script>
     function info(){
-        alert("Tombol Lengkap di ke clik");
+        //alert("Tombol Lengkap di ke clik");
+        let info = document.getElementById("infobox");
+        let btndetail = document.getElementById("btndetail");
+
+        info.style.display = "block";
+        btndetail.style.display = "none";
+    }
+
+    function tutupdetail(){
+        //alert("Tombol Lengkap di ke clik");
+        let info = document.getElementById("infobox");
+        let btndetail = document.getElementById("btndetail");
+
+        info.style.display = "none";
+        btndetail.style.display = "inline-block";
     }
 </script>
 
